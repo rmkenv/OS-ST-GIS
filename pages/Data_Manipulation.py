@@ -49,7 +49,7 @@ class GeoDataManipulator:
             self.selected_files = [file_options[file_name] for file_name in selected_files]
 
     def _fetch_github_files(self):
-        url = "https://api.github.com/repos/MEADecarb/st-gis/contents/data"
+        url = "https://api.github.com/repos/rmkenv/OS-ST-GIS/contents/data"
         response = requests.get(url)
         if response.status_code == 200:
             self.github_files = {file_info['name']: file_info['download_url'] for file_info in response.json() if file_info['name'].endswith(('.csv', '.geojson', '.xlsx', '.zip'))}
