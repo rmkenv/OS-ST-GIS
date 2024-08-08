@@ -77,5 +77,4 @@ st.write(
     """
 )
 
-# Add a line of text with a link to MD GIS data
-st.write("This is where you can find MD GIS data: [MD iMAP](https://data.imap.maryland.gov/)")
+
