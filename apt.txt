@@ -1,0 +1,4 @@
+libgl1-mesa-glx
+libglib2.0-0
+libjpeg-dev
+zlib1g-dev
