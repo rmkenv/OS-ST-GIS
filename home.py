@@ -76,5 +76,3 @@ st.write(
     - Geopy
     """
 )
-
-
