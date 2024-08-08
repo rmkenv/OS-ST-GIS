@@ -152,7 +152,7 @@ class GeoDataManipulator:
         return latitude_column, longitude_column
 
     def _get_column_index(self, df, pattern):
-        column_guess = df.columns.str_contains(pattern, case=False)
+        column_guess = df.columns.str.contains(pattern, case=False)
         if column_guess.any():
             return df.columns.get_loc(df.columns[column_guess][0])
         return 0
@@ -171,7 +171,7 @@ class GeoDataManipulator:
 
     def _add_markers(self, gdf):
         for _, row in gdf.iterrows():
-            popup_html = self.create_popup_html(row[:-1])
+            popup_html = self.create_popup_html(row.drop("geometry"))
             folium.Marker(
                 location=[row[self.latitude_column], row[self.longitude_column]],
                 popup=folium.Popup(popup_html, max_width=300),
