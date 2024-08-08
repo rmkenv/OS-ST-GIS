@@ -1,6 +1,6 @@
 # Essential packages for Streamlit
 streamlit==1.24.0
-streamlit-folium==0.8.0
+streamlit-folium==0.9.2  # Updated to be compatible with folium>=0.13.0
 
 # Visualization and plotting
 altair==4.0.0
@@ -13,7 +13,7 @@ pandas==1.5.3
 numpy==1.26.4
 
 # Geospatial libraries
-folium==0.12.1
+folium==0.14.0  # Updated to satisfy geemap requirements
 geopandas==0.10.2
 geopy==2.2.0
 shapely==2.0.4
