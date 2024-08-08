@@ -24,7 +24,6 @@ class GeoDataVisualizer:
     def _setup_page(self):
         st.set_page_config(page_title="Web Layers", layout="wide", page_icon="🛰️")
         st.sidebar.markdown("# Web Feature Services Visualization 🛰️")
-        st.sidebar.write("This is where you can find MD GIS data: [MD iMAP](https://data.imap.maryland.gov/)")
         with st.sidebar.expander("User Instructions"):
             st.markdown("""
             ### Instructions:
@@ -60,7 +59,7 @@ class GeoDataVisualizer:
             self.selected_files.append(arcrest_url)
 
     def _fetch_github_files(self):
-        url = "https://api.github.com/repos/MEADecarb/st-gis/contents/data"
+        url = "https://api.github.com/repos/rmkenv/OS-ST-GIS/contents/data"
         response = requests.get(url)
         if response.status_code == 200:
             self.github_files = {file_info['name']: file_info['download_url'] for file_info in response.json() if file_info['name'].endswith(('.csv', '.geojson', '.xlsx', '.zip'))}
