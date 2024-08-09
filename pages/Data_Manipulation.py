@@ -55,6 +55,7 @@ class GeoDataManipulator:
             self.github_files = {file_info['name']: file_info['download_url'] for file_info in response.json() if file_info['name'].endswith(('.csv', '.geojson', '.xlsx', '.zip'))}
             return self.github_files
         else:
+            st.error(f"Failed to fetch GitHub files. Status code: {response.status_code}")
             return {}
 
     def _add_basemaps(self):
