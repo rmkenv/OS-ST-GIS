@@ -2,7 +2,6 @@
 Welcome to the Open Source Streamlit Geospatial Tools repository, a collection of tools and applications designed for geospatial data analysis and visualization using Streamlit.
 
 Explore the App: https://os-st-gis-rmk.streamlit.app
-
 ## Overview
 
 This repository contains various geospatial tools built using Streamlit, an open-source app framework for Machine Learning and Data Science teams. These tools facilitate the analysis, visualization, and manipulation of geospatial data, making it accessible and interactive.
