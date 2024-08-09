@@ -47,6 +47,14 @@ st.write(
     - **Interactive Map and Data Table**: The map and data table are dynamically linked, allowing users to see the impact of their filters in real-time.
     - **Download Filtered Data**: After manipulating the data, users can download the filtered dataset as a CSV file.
 
+    ### CRS Transformer 🌐
+    **Purpose**: The CRS Transformer page allows users to view the Coordinate Reference System (CRS) of their geospatial data, transform it to a new CRS, and download the transformed data as a GeoJSON file. This is particularly useful when working with geospatial data in different projections.
+
+    **Key Features**:
+    - **View Current CRS**: Users can upload or select a file to view its current CRS.
+    - **Transform CRS**: Input a new CRS (e.g., EPSG:4326) to transform the data into the desired projection.
+    - **Download Transformed Data**: After transformation, users can download the data as a GeoJSON file.
+
     ### Batch Geocoding 📍
     **Purpose**: The Batch Geocoding page allows users to upload a CSV file containing address information and automatically geocode these addresses to obtain latitude and longitude coordinates.
 
@@ -63,10 +71,13 @@ st.write(
     4. **Viewing the Map**: The interactive map will automatically update to display the data from your selected or uploaded files.
     5. **Filtering Data**: Use the sidebar options to filter the data based on specific columns and values. This feature helps in focusing on the data points that matter most to you.
     6. **Geocoding Addresses**: Upload a CSV file with columns for street, city, and zip, then click the "Geocode" button to obtain latitude and longitude coordinates.
-    7. **Downloading Data**: Once you are satisfied with your data visualization, filtering, or geocoding, use the download button to export the data as a CSV file.
-    8. **Exploring the Data Table**: Scroll down to view the data table associated with the map or geocoded addresses. This table provides a detailed view of your data and can be used for further analysis.
+    7. **Transforming CRS**: Navigate to the CRS Transformer page, view the current CRS of your data, and input a new CRS to transform your data into a new projection. Download the transformed data as a GeoJSON file.
+    8. **Downloading Data**: Once you are satisfied with your data visualization, filtering, geocoding, or CRS transformation, use the download button to export the data as a CSV or GeoJSON file.
+    9. **Exploring the Data Table**: Scroll down to view the data table associated with the map or geocoded addresses. This table provides a detailed view of your data and can be used for further analysis.
 
     This application is built to be user-friendly and versatile, catering to both novice and advanced users who need to work with geospatial and tabular data. We hope you find it useful for your data exploration and analysis needs!
+
+    **Shoutout**: This project was inspired by the great work done on [Streamlit Geospatial Tools](https://github.com/hossamhassan77/streamlit-geospatial-tools). Be sure to check it out for more awesome geospatial applications!
 
     ### 💻 Used Technology:
     - Streamlit
