@@ -13,7 +13,6 @@ This repository contains various geospatial tools built using Streamlit, an open
 - **Geospatial Analysis**: Perform various geospatial analyses, including spatial joins, buffer creation, and more.
 - **User-Friendly Interface**: Streamlit's intuitive interface allows users to interact with geospatial data easily.
 
-## Getting Started
 
 ### Prerequisites
 
@@ -21,3 +20,6 @@ This repository contains various geospatial tools built using Streamlit, an open
 - Streamlit
 - Geopandas
 - Other dependencies as specified in the `requirements.txt` file
+
+### Credit
+This project was inspired by the great work done on [Streamlit Geospatial Tools](https://github.com/hossamhassan77/streamlit-geospatial-tools). Be sure to check it out for more awesome geospatial applications!
